@@ -1,50 +1,45 @@
 const isLoading: boolean = true;
 
 const int: number = 42;
-const message:string = 'Hello Typescript';
-const numberArray:number[] =[1,1,2,3,4]
+const message: string = 'Hello Typescript';
+const numberArray: number[] = [1, 1, 2, 3, 4];
 
 // Дженерик запись:
-const numberArray2:Array<number> =[1,1,2,3,4]
+const numberArray2: Array<number> = [1, 1, 2, 3, 4];
 
-const words:string[] =['Hello','TypeScript']
+const words: string[] = ['Hello', 'TypeScript'];
 
 // Tuple
-const contact:[string,number] = ['Kseniya',1234]
+const contact: [string, number] = ['Kseniya', 1234];
 
 // Any
 
-let variables:any = 42
-variables = 'New String'
+let variables: any = 42;
+variables = 'New String';
 
-
-// Function 
-function sayMyName(name:string):void {
+// Function
+function sayMyName(name: string): void {
   console.log(name);
-  
 }
-sayMyName('hu')
+sayMyName('hu');
 
 // Never
-// 1) когда ошибка в функции 
-function fromNever(message:string):never {
- 
-    throw new Error(message);
+// 1) когда ошибка в функции
+function fromNever(message: string): never {
+  throw new Error(message);
 }
 // 2) будет бесконечная функция
-function infinite():never {
-  while (true) {
-    
-  }
+function infinite(): never {
+  while (true) {}
 }
 
 // Type
-type Login = string
+type Login = string;
 // означает может быть строкой
-const login:Login = 'admin' 
+const login: Login = 'admin';
 
-type ID = string | number
-const id1:ID =1234
-const id2:ID ='1234'
+type ID = string | number;
+const id1: ID = 1234;
+const id2: ID = '1234';
 
-type SomeType = string |null |undefined
+type SomeType = string | null | undefined;
